@@ -1,0 +1,126 @@
+/* RESET & CONFIG */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+:root {
+    --clr-pale-blue: hsl(225, 100%, 94%);
+    --clr-bright-blue: hsl(245, 75%, 52%);
+    --clr-very-pale-blue: hsl(225, 100%, 98%);
+    --clr-desaturated-blue: hsl(224, 23%, 55%);
+    --clr-dark-blue: hsl(223, 47%, 23%);
+}
+
+body, button {
+    font-family: "Red Hat Display", sans-serif;
+}
+
+/* BACKGROUND */
+main {
+    background: var(--clr-pale-blue) url('./images/pattern-background-desktop.svg') no-repeat;
+    background-size: contain;
+    padding: 100px 0;
+}
+
+/* TYPOGRAPHY */
+.card-title {
+    font-size: 1.8rem;
+}
+
+.plan-title {
+    font-size: 1rem;
+}
+
+.card-title, .plan-title {
+    color: var(--clr-dark-blue);
+    font-weight: 900;
+}
+
+.card-desc, .plan-price {
+    color: var(--clr-desaturated-blue);
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.plan-change {
+    color: var(--clr-bright-blue);
+    text-decoration-color: currentColor;
+}
+
+.plan-change:hover,
+.plan-change:focus {
+    color: var(--clr-desaturated-blue);
+    text-decoration: none;
+}
+
+/* ELEMENTS */
+
+/* BUTTONS */
+.primary-btn {
+    color: var(--clr-very-pale-blue);
+    background-color: var(--clr-bright-blue);
+    border-radius: 10px;
+    box-shadow: 0 1rem 10px var(--clr-pale-blue);
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.primary-btn:hover,
+.primary-btn:focus {
+    background-color: var(--clr-desaturated-blue);
+}
+
+.secundary-btn {
+    color: var(--clr-desaturated-blue);
+    background-color: transparent;
+    margin: 0;
+    margin-top: 1rem;
+}
+
+.secundary-btn:hover,
+.secundary-btn:focus {
+    color: var(--clr-dark-blue);
+}
+
+.primary-btn, .secundary-btn {
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+/* CARD & PLAN */
+.card {
+    margin: 0 auto;
+    width: 450px;
+    text-align: center;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.card-info {
+    width: 80%;
+    margin: 40px auto;
+}
+
+.card-desc {
+    margin: 1rem auto;
+}
+
+.plan {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+    padding: 1rem;
+    background-color: var(--clr-very-pale-blue);
+    border-radius: 10px;
+}
+
+.plan-info {
+    flex-grow: 2;
+    text-align: left;
+}
